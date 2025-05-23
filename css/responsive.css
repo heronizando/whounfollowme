@@ -1,38 +1,146 @@
 /* Responsive styles */
+
+/* Tablets e dispositivos menores */
 @media screen and (max-width: 1024px) {
+    .container {
+        padding: 0 15px;
+    }
+
+    .hero-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-text {
+        margin-bottom: 40px;
+    }
+
     .hero-text h1 {
         font-size: 40px;
     }
-    
-    .step {
+
+    .hero-stats {
+        justify-content: center;
+    }
+
+    .features-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    .plans-container {
         flex-direction: column;
+        align-items: center;
     }
-    
-    .step-content {
-        flex: 0 0 100%;
-        padding-right: 0;
-        margin-bottom: 20px;
-        text-align: center;
-    }
-    
-    .step-image {
-        flex: 0 0 100%;
-        max-width: 500px;
-        margin: 0 auto;
-    }
-    
-    .step:not(:last-child)::after {
-        display: none;
+
+    .plan {
+        width: 100%;
+        max-width: 400px;
+        margin-bottom: 30px;
     }
 }
 
+/* Tablets pequenos e smartphones grandes */
+@media screen and (max-width: 768px) {
+    .header-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .nav {
+        margin-top: 20px;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .btn {
+        width: 100%;
+    }
+
+    .testimonials-slider {
+        padding: 0 20px;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-links {
+        flex-direction: column;
+        gap: 30px;
+    }
+}
+
+/* Smartphones */
 @media screen and (max-width: 480px) {
     .section-header h2 {
         font-size: 28px;
     }
-    
-    .step-number {
-        margin-bottom: 15px;
+
+    .features-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .hero-text h1 {
+        font-size: 32px;
+    }
+
+    .hero-stats {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .testimonial {
+        padding: 15px;
+    }
+
+    .faq-question h3 {
+        font-size: 16px;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+        gap: 20px;
+    }
+}
+
+/* Smartphones pequenos */
+@media screen and (max-width: 320px) {
+    .hero-text h1 {
+        font-size: 28px;
+    }
+
+    .btn {
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+}
+
+/* Suporte a telas de alta resolução */
+@media screen and (min-width: 1440px) {
+    .container {
+        max-width: 1400px;
+    }
+}
+
+/* Suporte a modo escuro do sistema */
+@media (prefers-color-scheme: dark) {
+    :root {
+        --light-color: #1a1a1a;
+        --dark-color: #ffffff;
+        --text-color: #f0f0f0;
+        --text-light: #cccccc;
+        --border-color: #333333;
+        --gray-color: #222222;
     }
 }
 
