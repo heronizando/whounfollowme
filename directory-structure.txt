@@ -1,0 +1,22 @@
+unfollower-website/
+├── index.html
+├── styles.css (core styles)
+├── script.js (main script loader)
+├── css/
+│   ├── header.css
+│   ├── hero.css
+│   ├── features.css
+│   ├── premium.css
+│   ├── testimonials.css
+│   ├── faq.css
+│   ├── cta.css
+│   ├── footer.css
+│   └── responsive.css
+├── js/
+│   ├── header.js
+│   ├── language-selector.js
+│   ├── testimonials.js
+│   ├── faq.js
+│   └── animations.js
+└── images/ (all image assets)
+

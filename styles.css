@@ -1,0 +1,133 @@
+/* Base styles and variables - keeping core styles here */
+:root {
+    --primary-color: #5851DB;
+    --secondary-color: #833AB4;
+    --accent-color: #E1306C;
+    --light-accent: #FCAF45;
+    --dark-color: #222222;
+    --light-color: #ffffff;
+    --gray-color: #f6f6f6;
+    --text-color: #333333;
+    --text-light: #666666;
+    --border-color: #e5e5e5;
+    --shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    --gradient: linear-gradient(45deg, #5851DB, #833AB4, #C13584, #E1306C, #FCAF45);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    color: var(--text-color);
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+a {
+    text-decoration: none;
+    color: var(--primary-color);
+    transition: all 0.3s ease;
+}
+
+a:hover {
+    color: var(--secondary-color);
+}
+
+ul {
+    list-style: none;
+}
+
+/* Buttons styles */
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px 25px;
+    border-radius: 30px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.btn i {
+    margin-right: 8px;
+}
+
+.btn-primary {
+    background: var(--gradient);
+    color: var(--light-color);
+}
+
+.btn-primary:hover {
+    box-shadow: 0 5px 15px rgba(225, 48, 108, 0.3);
+    transform: translateY(-2px);
+    color: var(--light-color);
+}
+
+.btn-secondary {
+    background: transparent;
+    color: var(--primary-color);
+    border: 2px solid var(--primary-color);
+}
+
+.btn-secondary:hover {
+    background: var(--primary-color);
+    color: var(--light-color);
+}
+
+.btn-lg {
+    padding: 15px 30px;
+    font-size: 18px;
+}
+
+/* Section header styles */
+.section-header {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.section-header h2 {
+    font-size: 36px;
+    margin-bottom: 15px;
+    color: var(--dark-color);
+    position: relative;
+    display: inline-block;
+}
+
+.section-header h2::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 50px;
+    height: 3px;
+    background: var(--gradient);
+    border-radius: 3px;
+}
+
+.section-header p {
+    font-size: 18px;
+    color: var(--text-light);
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+/* Removed all other styles - moved to component CSS files */
