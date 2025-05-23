@@ -1,4 +1,4 @@
-const translations = {
+export const translations = {
     pt: {
         meta: {
             title: 'Quem Deixou de Me Seguir | Rastreie Unfollowers do Instagram',
@@ -18,8 +18,40 @@ const translations = {
             subtitle: 'Monitore seus seguidores do Instagram e descubra quem parou de te seguir com nossa extensão fácil, segura e confiável.',
             cta: 'Instalar no Chrome',
             learnMore: 'Saiba Mais'
+        },
+        features: {
+            title: 'Principais Funcionalidades',
+            subtitle: 'Descubra tudo o que nossa extensão pode fazer por você',
+            cards: {
+                tracking: {
+                    title: 'Rastreie Unfollowers',
+                    description: 'Compare suas listas de seguidores e descubra quem deixou de te seguir com precisão.'
+                },
+                history: {
+                    title: 'Histórico de Mudanças',
+                    description: 'Mantenha um registro das mudanças em seus seguidores ao longo do tempo.'
+                },
+                security: {
+                    title: '100% Seguro',
+                    description: 'Funciona sem solicitar sua senha do Instagram, garantindo total segurança de seus dados.'
+                }
+            }
+        },
+        pricing: {
+            title: 'Versões Disponíveis',
+            subtitle: 'Escolha o plano que melhor atende às suas necessidades',
+            free: {
+                title: 'Versão Gratuita',
+                price: 'R$ 0',
+                period: 'para sempre'
+            },
+            premium: {
+                title: 'Versão Premium',
+                price: 'R$ 19,90',
+                period: 'por mês',
+                badge: 'Recomendado'
+            }
         }
-        // ... outras traduções em português
     },
     en: {
         meta: {

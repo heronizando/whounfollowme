@@ -8,85 +8,85 @@
 
     <!-- Página Principal - Português -->
     <url>
-        <loc>https://quemdeixoudeseguir.com/pt/</loc>
+        <loc>https://heronizando.github.io/whounfollowme/pt/</loc>
         <lastmod>2024-03-19</lastmod>
         <changefreq>weekly</changefreq>
         <priority>1.0</priority>
-        <xhtml:link rel="alternate" hreflang="pt" href="https://quemdeixoudeseguir.com/pt/"/>
-        <xhtml:link rel="alternate" hreflang="en" href="https://quemdeixoudeseguir.com/en/"/>
-        <xhtml:link rel="alternate" hreflang="es" href="https://quemdeixoudeseguir.com/es/"/>
-        <xhtml:link rel="alternate" hreflang="fr" href="https://quemdeixoudeseguir.com/fr/"/>
-        <xhtml:link rel="alternate" hreflang="de" href="https://quemdeixoudeseguir.com/de/"/>
-        <xhtml:link rel="alternate" hreflang="x-default" href="https://quemdeixoudeseguir.com/"/>
+        <xhtml:link rel="alternate" hreflang="pt" href="https://heronizando.github.io/whounfollowme/pt/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://heronizando.github.io/whounfollowme/en/"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://heronizando.github.io/whounfollowme/es/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://heronizando.github.io/whounfollowme/fr/"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://heronizando.github.io/whounfollowme/de/"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://heronizando.github.io/whounfollowme/"/>
         <image:image>
-            <image:loc>https://quemdeixoudeseguir.com/images/hero-mockup.png</image:loc>
+            <image:loc>https://heronizando.github.io/whounfollowme/images/hero-mockup.png</image:loc>
             <image:title>Extensão Quem Deixou de Me Seguir em uso</image:title>
         </image:image>
         <image:image>
-            <image:loc>https://quemdeixoudeseguir.com/images/logo.png</image:loc>
+            <image:loc>https://heronizando.github.io/whounfollowme/images/logo.png</image:loc>
             <image:title>Logo Quem Deixou de Me Seguir</image:title>
         </image:image>
     </url>
 
     <!-- English Version -->
     <url>
-        <loc>https://quemdeixoudeseguir.com/en/</loc>
+        <loc>https://heronizando.github.io/whounfollowme/en/</loc>
         <lastmod>2024-03-19</lastmod>
         <changefreq>weekly</changefreq>
         <priority>1.0</priority>
-        <xhtml:link rel="alternate" hreflang="pt" href="https://quemdeixoudeseguir.com/pt/"/>
-        <xhtml:link rel="alternate" hreflang="en" href="https://quemdeixoudeseguir.com/en/"/>
-        <xhtml:link rel="alternate" hreflang="es" href="https://quemdeixoudeseguir.com/es/"/>
-        <xhtml:link rel="alternate" hreflang="fr" href="https://quemdeixoudeseguir.com/fr/"/>
-        <xhtml:link rel="alternate" hreflang="de" href="https://quemdeixoudeseguir.com/de/"/>
-        <xhtml:link rel="alternate" hreflang="x-default" href="https://quemdeixoudeseguir.com/"/>
+        <xhtml:link rel="alternate" hreflang="pt" href="https://heronizando.github.io/whounfollowme/pt/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://heronizando.github.io/whounfollowme/en/"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://heronizando.github.io/whounfollowme/es/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://heronizando.github.io/whounfollowme/fr/"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://heronizando.github.io/whounfollowme/de/"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://heronizando.github.io/whounfollowme/"/>
     </url>
 
     <!-- Versión Española -->
     <url>
-        <loc>https://quemdeixoudeseguir.com/es/</loc>
+        <loc>https://heronizando.github.io/whounfollowme/es/</loc>
         <lastmod>2024-03-19</lastmod>
         <changefreq>weekly</changefreq>
         <priority>1.0</priority>
-        <xhtml:link rel="alternate" hreflang="pt" href="https://quemdeixoudeseguir.com/pt/"/>
-        <xhtml:link rel="alternate" hreflang="en" href="https://quemdeixoudeseguir.com/en/"/>
-        <xhtml:link rel="alternate" hreflang="es" href="https://quemdeixoudeseguir.com/es/"/>
-        <xhtml:link rel="alternate" hreflang="fr" href="https://quemdeixoudeseguir.com/fr/"/>
-        <xhtml:link rel="alternate" hreflang="de" href="https://quemdeixoudeseguir.com/de/"/>
-        <xhtml:link rel="alternate" hreflang="x-default" href="https://quemdeixoudeseguir.com/"/>
+        <xhtml:link rel="alternate" hreflang="pt" href="https://heronizando.github.io/whounfollowme/pt/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://heronizando.github.io/whounfollowme/en/"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://heronizando.github.io/whounfollowme/es/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://heronizando.github.io/whounfollowme/fr/"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://heronizando.github.io/whounfollowme/de/"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://heronizando.github.io/whounfollowme/"/>
     </url>
 
     <!-- Version Française -->
     <url>
-        <loc>https://quemdeixoudeseguir.com/fr/</loc>
+        <loc>https://heronizando.github.io/whounfollowme/fr/</loc>
         <lastmod>2024-03-19</lastmod>
         <changefreq>weekly</changefreq>
         <priority>1.0</priority>
-        <xhtml:link rel="alternate" hreflang="pt" href="https://quemdeixoudeseguir.com/pt/"/>
-        <xhtml:link rel="alternate" hreflang="en" href="https://quemdeixoudeseguir.com/en/"/>
-        <xhtml:link rel="alternate" hreflang="es" href="https://quemdeixoudeseguir.com/es/"/>
-        <xhtml:link rel="alternate" hreflang="fr" href="https://quemdeixoudeseguir.com/fr/"/>
-        <xhtml:link rel="alternate" hreflang="de" href="https://quemdeixoudeseguir.com/de/"/>
-        <xhtml:link rel="alternate" hreflang="x-default" href="https://quemdeixoudeseguir.com/"/>
+        <xhtml:link rel="alternate" hreflang="pt" href="https://heronizando.github.io/whounfollowme/pt/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://heronizando.github.io/whounfollowme/en/"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://heronizando.github.io/whounfollowme/es/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://heronizando.github.io/whounfollowme/fr/"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://heronizando.github.io/whounfollowme/de/"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://heronizando.github.io/whounfollowme/"/>
     </url>
 
     <!-- Deutsche Version -->
     <url>
-        <loc>https://quemdeixoudeseguir.com/de/</loc>
+        <loc>https://heronizando.github.io/whounfollowme/de/</loc>
         <lastmod>2024-03-19</lastmod>
         <changefreq>weekly</changefreq>
         <priority>1.0</priority>
-        <xhtml:link rel="alternate" hreflang="pt" href="https://quemdeixoudeseguir.com/pt/"/>
-        <xhtml:link rel="alternate" hreflang="en" href="https://quemdeixoudeseguir.com/en/"/>
-        <xhtml:link rel="alternate" hreflang="es" href="https://quemdeixoudeseguir.com/es/"/>
-        <xhtml:link rel="alternate" hreflang="fr" href="https://quemdeixoudeseguir.com/fr/"/>
-        <xhtml:link rel="alternate" hreflang="de" href="https://quemdeixoudeseguir.com/de/"/>
-        <xhtml:link rel="alternate" hreflang="x-default" href="https://quemdeixoudeseguir.com/"/>
+        <xhtml:link rel="alternate" hreflang="pt" href="https://heronizando.github.io/whounfollowme/pt/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://heronizando.github.io/whounfollowme/en/"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://heronizando.github.io/whounfollowme/es/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://heronizando.github.io/whounfollowme/fr/"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://heronizando.github.io/whounfollowme/de/"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://heronizando.github.io/whounfollowme/"/>
     </url>
 
     <!-- Política de Privacidade -->
     <url>
-        <loc>https://quemdeixoudeseguir.com/politica-de-privacidade</loc>
+        <loc>https://heronizando.github.io/whounfollowme/politica-de-privacidade</loc>
         <lastmod>2024-03-19</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
@@ -94,7 +94,7 @@
 
     <!-- Termos de Uso -->
     <url>
-        <loc>https://quemdeixoudeseguir.com/termos-de-uso</loc>
+        <loc>https://heronizando.github.io/whounfollowme/termos-de-uso</loc>
         <lastmod>2024-03-19</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
@@ -102,7 +102,7 @@
 
     <!-- Blog -->
     <url>
-        <loc>https://quemdeixoudeseguir.com/blog</loc>
+        <loc>https://heronizando.github.io/whounfollowme/blog</loc>
         <lastmod>2024-03-19</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
@@ -110,7 +110,7 @@
 
     <!-- Suporte -->
     <url>
-        <loc>https://quemdeixoudeseguir.com/suporte</loc>
+        <loc>https://heronizando.github.io/whounfollowme/suporte</loc>
         <lastmod>2024-03-19</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
@@ -118,7 +118,7 @@
 
     <!-- Versão Premium -->
     <url>
-        <loc>https://quemdeixoudeseguir.com/premium</loc>
+        <loc>https://heronizando.github.io/whounfollowme/premium</loc>
         <lastmod>2024-03-19</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>

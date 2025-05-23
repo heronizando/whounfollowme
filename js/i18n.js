@@ -4,6 +4,8 @@ import { translations } from './i18n/translations.js';
 class I18n {
     constructor() {
         this.currentLang = localStorage.getItem('lang') || this.getBrowserLanguage() || 'en';
+        this.translations = translations;
+        this.baseUrl = 'https://heronizando.github.io/whounfollowme';
         this.init();
     }
 
@@ -11,14 +13,15 @@ class I18n {
     getBrowserLanguage() {
         const lang = navigator.language || navigator.userLanguage;
         const shortLang = lang.split('-')[0];
-        return translations[shortLang] ? shortLang : 'en';
+        return this.translations[shortLang] ? shortLang : 'en';
     }
 
     // Inicializar internacionalização
     init() {
-        this.setLanguage(this.currentLang);
+        document.documentElement.lang = this.currentLang;
         this.setupLanguageSelector();
         this.updateMetaTags();
+        this.updateContent();
     }
 
     // Configurar seletor de idiomas
@@ -34,32 +37,70 @@ class I18n {
 
     // Atualizar meta tags para SEO
     updateMetaTags() {
-        const meta = translations[this.currentLang].meta;
+        const meta = this.translations[this.currentLang].meta;
+        
+        // Atualizar título e meta tags
         document.title = meta.title;
-        document.querySelector('meta[name="description"]').content = meta.description;
-        document.querySelector('meta[name="keywords"]').content = meta.keywords;
+        
+        const metaTags = {
+            'description': meta.description,
+            'keywords': meta.keywords
+        };
+        
+        Object.entries(metaTags).forEach(([name, content]) => {
+            let tag = document.querySelector(`meta[name="${name}"]`);
+            if (!tag) {
+                tag = document.createElement('meta');
+                tag.name = name;
+                document.head.appendChild(tag);
+            }
+            tag.content = content;
+        });
 
-        // Atualizar tags Open Graph
-        document.querySelector('meta[property="og:title"]').content = meta.title;
-        document.querySelector('meta[property="og:description"]').content = meta.description;
+        // Atualizar Open Graph
+        const ogTags = {
+            'og:title': meta.title,
+            'og:description': meta.description,
+            'og:url': `${this.baseUrl}/${this.currentLang}/`
+        };
 
-        // Atualizar canonical e hreflang
-        const canonical = document.querySelector('link[rel="canonical"]');
-        canonical.href = `https://quemdeixoudeseguir.com/${this.currentLang}/`;
+        Object.entries(ogTags).forEach(([property, content]) => {
+            let tag = document.querySelector(`meta[property="${property}"]`);
+            if (!tag) {
+                tag = document.createElement('meta');
+                tag.setAttribute('property', property);
+                document.head.appendChild(tag);
+            }
+            tag.content = content;
+        });
 
-        // Atualizar URL sem recarregar a página
-        window.history.pushState({}, '', `/${this.currentLang}/`);
+        // Atualizar canonical
+        let canonical = document.querySelector('link[rel="canonical"]');
+        if (!canonical) {
+            canonical = document.createElement('link');
+            canonical.rel = 'canonical';
+            document.head.appendChild(canonical);
+        }
+        canonical.href = `${this.baseUrl}/${this.currentLang}/`;
+
+        // Atualizar URL
+        const newPath = `/${this.currentLang}${window.location.pathname.replace(/^\/[a-z]{2}/, '')}`;
+        window.history.pushState({}, '', newPath);
     }
 
     // Definir idioma
     setLanguage(lang) {
-        if (!translations[lang]) return;
+        if (!this.translations[lang]) return;
         
         this.currentLang = lang;
         localStorage.setItem('lang', lang);
+        document.documentElement.lang = lang;
         
         this.updateMetaTags();
         this.updateContent();
+
+        // Disparar evento de mudança de idioma
+        window.dispatchEvent(new CustomEvent('languageChanged', { detail: { language: lang } }));
     }
 
     // Atualizar conteúdo da página
@@ -68,10 +109,10 @@ class I18n {
         elements.forEach(element => {
             const key = element.dataset.i18n;
             const keys = key.split('.');
-            let value = translations[this.currentLang];
+            let value = this.translations[this.currentLang];
             
             for (const k of keys) {
-                if (value[k]) {
+                if (value && value[k]) {
                     value = value[k];
                 } else {
                     console.warn(`Translation key not found: ${key}`);
@@ -81,10 +122,27 @@ class I18n {
 
             if (element.tagName === 'INPUT' && element.type === 'placeholder') {
                 element.placeholder = value;
+            } else if (element.tagName === 'A' && !element.dataset.i18nKeepHref) {
+                element.textContent = value;
             } else {
                 element.textContent = value;
             }
         });
+    }
+
+    translate(key) {
+        const keys = key.split('.');
+        let value = this.translations[this.currentLang];
+        
+        for (const k of keys) {
+            if (value && value[k]) {
+                value = value[k];
+            } else {
+                return key;
+            }
+        }
+        
+        return value;
     }
 }
 
