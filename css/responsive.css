@@ -1,0 +1,38 @@
+/* Responsive styles */
+@media screen and (max-width: 1024px) {
+    .hero-text h1 {
+        font-size: 40px;
+    }
+    
+    .step {
+        flex-direction: column;
+    }
+    
+    .step-content {
+        flex: 0 0 100%;
+        padding-right: 0;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+    
+    .step-image {
+        flex: 0 0 100%;
+        max-width: 500px;
+        margin: 0 auto;
+    }
+    
+    .step:not(:last-child)::after {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .section-header h2 {
+        font-size: 28px;
+    }
+    
+    .step-number {
+        margin-bottom: 15px;
+    }
+}
+

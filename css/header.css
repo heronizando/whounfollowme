@@ -1,0 +1,160 @@
+/* Header styles */
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 15px 0;
+    background-color: var(--light-color);
+    box-shadow: var(--shadow);
+    z-index: 1000;
+    transition: all 0.3s ease;
+}
+
+.header.scrolled {
+    padding: 10px 0;
+    background-color: rgba(255, 255, 255, 0.95);
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img {
+    height: 40px;
+    object-fit: contain;
+}
+
+.nav ul {
+    display: flex;
+}
+
+.nav ul li {
+    margin-left: 30px;
+}
+
+.nav-link {
+    color: var(--dark-color);
+    font-weight: 500;
+    position: relative;
+}
+
+.nav-link::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: var(--gradient);
+    transition: width 0.3s ease;
+}
+
+.nav-link:hover {
+    color: var(--primary-color);
+}
+
+.nav-link:hover::after {
+    width: 100%;
+}
+
+.language-selector {
+    position: relative;
+}
+
+.language-btn {
+    display: flex;
+    align-items: center;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    color: var(--dark-color);
+}
+
+.language-btn i {
+    margin-right: 5px;
+}
+
+.language-dropdown {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background: var(--light-color);
+    box-shadow: var(--shadow);
+    border-radius: 5px;
+    padding: 10px 0;
+    min-width: 150px;
+    z-index: 10;
+    display: none;
+}
+
+.language-dropdown.show {
+    display: block;
+}
+
+.language-dropdown a {
+    display: block;
+    padding: 8px 15px;
+    color: var(--text-color);
+}
+
+.language-dropdown a:hover {
+    background-color: var(--gray-color);
+}
+
+.language-dropdown a.active {
+    color: var(--primary-color);
+    font-weight: 500;
+}
+
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.hamburger span {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: var(--dark-color);
+    margin-bottom: 5px;
+    border-radius: 3px;
+    transition: all 0.3s ease;
+}
+
+/* Mobile menu styles */
+@media screen and (max-width: 768px) {
+    .hamburger {
+        display: flex;
+    }
+    
+    .nav {
+        position: fixed;
+        top: 70px;
+        left: -100%;
+        width: 100%;
+        height: calc(100vh - 70px);
+        background: var(--light-color);
+        padding: 20px;
+        transition: all 0.3s ease;
+        z-index: 99;
+    }
+    
+    .nav.active {
+        left: 0;
+    }
+    
+    .nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .nav ul li {
+        margin: 15px 0;
+    }
+}

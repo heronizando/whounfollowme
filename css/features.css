@@ -1,0 +1,68 @@
+/* Features section */
+.features {
+    padding: 100px 0;
+    background-color: var(--light-color);
+}
+
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.feature-card {
+    background: var(--light-color);
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: var(--shadow);
+    transition: all 0.3s ease;
+    text-align: center;
+}
+
+.feature-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+}
+
+.feature-icon {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: var(--primary-color);
+    width: 80px;
+    height: 80px;
+    background: var(--gray-color);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 20px;
+    transition: all 0.3s ease;
+}
+
+.feature-card:hover .feature-icon {
+    background: var(--gradient);
+    color: var(--light-color);
+}
+
+.feature-card h3 {
+    font-size: 20px;
+    margin-bottom: 15px;
+    color: var(--dark-color);
+}
+
+.feature-card p {
+    color: var(--text-light);
+}
+
+@media screen and (max-width: 1024px) {
+    .features-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .features-grid {
+        grid-template-columns: 1fr;
+    }
+}
+

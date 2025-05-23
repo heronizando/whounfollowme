@@ -1,0 +1,83 @@
+/* Testimonials section */
+.testimonials {
+    padding: 100px 0;
+    background-color: var(--gray-color);
+    position: relative;
+}
+
+.testimonials-slider {
+    max-width: 800px;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+}
+
+.testimonial {
+    background: var(--light-color);
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: var(--shadow);
+    margin: 0 15px;
+}
+
+.testimonial-content {
+    margin-bottom: 20px;
+}
+
+.testimonial-content p {
+    font-style: italic;
+    color: var(--text-color);
+    line-height: 1.8;
+}
+
+.testimonial-author {
+    display: flex;
+    align-items: center;
+}
+
+.testimonial-author img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-right: 15px;
+    object-fit: cover;
+}
+
+.author-info h4 {
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.rating i {
+    color: #FFC107;
+    font-size: 14px;
+}
+
+.testimonials-nav {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    gap: 20px;
+}
+
+.prev-btn, .next-btn {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: var(--light-color);
+    border: none;
+    color: var(--primary-color);
+    font-size: 16px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: var(--shadow);
+    transition: all 0.3s ease;
+}
+
+.prev-btn:hover, .next-btn:hover {
+    background: var(--primary-color);
+    color: var(--light-color);
+}
+
